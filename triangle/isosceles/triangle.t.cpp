@@ -5,18 +5,6 @@
 // ISOSCELES TRIANGLE EXAMPLE //
 /////////////////////////////////    
 
-
-// Test that checks that all sides being equal results to return true
-TEST(Equilateral, IsEquilateralIfAllSidesEqual){
-  EXPECT_TRUE(isEquilateral(4, 4, 4));
-}
-
-// Test that checks that all unequal side lengths return false
-TEST(Equilateral, IsNotEquilateralIfAnySideIsNotEqualToTheOthers){
-  EXPECT_FALSE(isEquilateral(3, 4, 5));
-
-}
-
 // Negative sides
 TEST(Equilateral, IsNotEquilateralIfAnySideIsNegative){
   EXPECT_FALSE(isEquilateral(5, -4, 4));
@@ -30,14 +18,26 @@ TEST(Equilateral, IsNotEquilateralIfNotValidTriangle){
   EXPECT_FALSE(isEquilateral(1, 2, 3));
 }
 
+// Test that checks that all unequal side lengths return false
+TEST(Equilateral, IsNotEquilateralIfAnySideIsNotEqualToTheOthers){
+  EXPECT_FALSE(isEquilateral(3, 4, 5));
+
+}
+
+// Test that checks that all sides being equal results to return true
+TEST(Equilateral, IsEquilateralIfAllSidesEqual){
+  EXPECT_TRUE(isEquilateral(4, 4, 4));
+}
+
 ////THIS EXERCISE STARTS HERE
 
 //STEP1: Write a test! (already provided below)
 
-TEST(Isosceles, IsIsoscelesIfTwoSidesEqual){
-  //write your test here
+// Negative sides
+TEST(Isosceles, IsNotIsoscelesIfAnySideIsNegative){
 
-}	
+
+}
 
 //STEP2: run 'make' in the command line
 //       (will fail)

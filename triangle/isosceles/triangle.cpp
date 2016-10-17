@@ -15,12 +15,12 @@ bool isEquilateral(int side_a, int side_b, int side_c){
     return false;
   }
 
-  if (side_a == side_b && side_b == side_c){
-    return true;
-  }
+  if (!(side_a == side_b && side_b == side_c)){
     return false;
+  }
+    return true;
 }
 
 bool isIsosceles(int side_a, int side_b, int side_c){
-
+  //return true;
 }

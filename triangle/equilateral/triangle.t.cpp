@@ -7,9 +7,11 @@
 
 //STEP1: Write a test! (already provided below)
 
-// Test that checks that all sides being equal results to return true
-TEST(Equilateral, IsEquilateralIfAllSidesEqual){
-  EXPECT_TRUE(isEquilateral(4, 4, 4));
+// Test that checks for negative sides
+TEST(Equilateral, IsNotEquilateralIfAnySideIsNegative){
+  EXPECT_FALSE(isEquilateral(5, -4, 4));
+  EXPECT_FALSE(isEquilateral(-5, -4, -4));
+  EXPECT_FALSE(isEquilateral(-4, -4, -4)); //equal but negative!
 }
 
 //STEP2: run 'make' in the command line
