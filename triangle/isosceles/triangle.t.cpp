@@ -35,8 +35,8 @@ TEST(Equilateral, IsEquilateralIfAllSidesEqual){
 
 // Negative sides
 TEST(Isosceles, IsNotIsoscelesIfAnySideIsNegative){
-  EXPECT_FALSE(isIsosceles(5, -4, 4));
-  EXPECT_FALSE(isIsosceles(-5, -4, -4));
+
+
 }
 
 //STEP2: run 'make' in the command line
